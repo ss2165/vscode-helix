@@ -142,4 +142,12 @@ export const gotoActions: Action[] = [
   parseKeysExact(['g', 'p'], [Mode.Normal], () => {
     commands.executeCommand('workbench.action.previousEditor');
   }),
+
+  parseKeysExact(['g', 'w'], [Mode.Normal], () => {
+    commands.executeCommand('jumpy2.toggle');
+  }),
+
+  parseKeysExact(['g', 'w'], [Mode.Visual], () => {
+    commands.executeCommand('jumpy2.toggleSelection');
+  }),
 ];

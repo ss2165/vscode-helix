@@ -1,12 +1,12 @@
 {
   "name": "vscode-helix-emulation",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "displayName": "Helix For VS Code",
   "description": "Helix emulation for Visual Studio Code",
-  "publisher": "jasew",
-  "author": "Jason Williams",
+  "publisher": "ss2165",
+  "author": "ss2165",
   "license": "MIT",
-  "homepage": "https://github.com/jasonwilliams/vscode-helix",
+  "homepage": "https://github.com/ss2165/vscode-helix",
   "keywords": [
     "vim",
     "vi",
@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasonwilliams/vscode-helix"
+    "url": "https://github.com/ss2165/vscode-helix"
   },
   "bugs": {
-    "url": "https://github.com/jasonwilliams/vscode-helix/issues"
+    "url": "https://github.com/ss2165/vscode-helix/issues"
   },
   "categories": [
     "Other",
@@ -26,9 +26,7 @@
   "main": "./dist/index.js",
   "browser": "./dist/browser.js",
   "icon": "docs/img/helixLogo.png",
-  "files": [
-    "dist"
-  ],
+
   "engines": {
     "vscode": "^1.83.1"
   },
@@ -321,6 +319,7 @@
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "bumpp": "^8.2.1",
+    "esbuild": "^0.19.5",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^9.0.0",
     "esno": "^0.16.3",
@@ -328,7 +327,9 @@
     "rimraf": "^3.0.2",
     "string.prototype.matchall": "^4.0.2",
     "typescript": "^5.2.2",
-    "esbuild": "^0.19.5",
     "vsce": "^2.11.0"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.2.1"
   }
 }

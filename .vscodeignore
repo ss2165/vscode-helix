@@ -5,3 +5,6 @@ src/**
 .gitignore
 tsconfig.json
 tslint.json
+.devenv
+.direnv
+devenv.*
